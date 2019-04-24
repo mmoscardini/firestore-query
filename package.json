@@ -1,0 +1,30 @@
+{
+  "name": "firestore-query",
+  "version": "1.0.0",
+  "description": "Small node app to perform queries to firestore",
+  "main": "app.js",
+  "scripts": {
+    "start": "FIREBASE_API_KEY=$FIREBASE_API_KEY FIREBASE_PROJECT_ID=$FIREBASE_PROJECT_ID node ./app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmoscardini/firestore-query.git"
+  },
+  "keywords": [
+    "firestore",
+    "query"
+  ],
+  "author": "mmoscardini",
+  "license": "GNU",
+  "bugs": {
+    "url": "https://github.com/mmoscardini/firestore-query/issues"
+  },
+  "homepage": "https://github.com/mmoscardini/firestore-query#readme",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "dependencies": {
+    "firebase": "^5.10.0"
+  }
+}
