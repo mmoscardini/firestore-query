@@ -4,7 +4,7 @@
   "description": "Small node app to perform queries to firestore",
   "main": "app.js",
   "scripts": {
-    "start": "FIREBASE_API_KEY=$FIREBASE_API_KEY FIREBASE_PROJECT_ID=$FIREBASE_PROJECT_ID node ./app.js",
+    "start": "node ./app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,5 +26,12 @@
   },
   "dependencies": {
     "firebase": "^5.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.12.0",
+    "eslint-config-airbnb-base": "^12.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^3.6.0"
   }
 }
