@@ -66,3 +66,5 @@ typings/
 #keyfiles
 keyfile.json
 
+#query
+query.txt

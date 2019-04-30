@@ -1,22 +1,19 @@
-// const firebase = require('firebase');
 const admin = require('firebase-admin');
 const gcloud = require('./gcloudClients');
+const {queryBuilder } = require('./queryBuilder');
 
 const credentials = gcloud.getCredentials(process.env.PROJECT_ID);
 const firestore = gcloud.getFirestore(credentials);
 
-const COLLECTION_NAME = 'ownersLeads'
-
 const main = async () =>{
-  const ownersLeads = await firestore.collection(COLLECTION_NAME)
-    .get()
+  const query = await queryBuilder(firestore)
     .catch((err) => {
       throw new Error(err);
     });
 
-  ownersLeads.docs.forEach(async snapshot => {
-    const leadDoc = snapshot.data()
-    console.log(leadDoc)
+  query.docs.forEach(async snapshot => {
+    const docData = snapshot.data()
+    console.log(docData)
   });
 }
 
