@@ -11,6 +11,11 @@ const main = async () =>{
       throw new Error(err);
     });
 
+  if (!query.docs.length){
+    console.log ('No results found for this query');
+    return;
+  }
+  
   query.docs.forEach(async snapshot => {
     const docData = snapshot.data()
     console.log(docData)
