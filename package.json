@@ -25,7 +25,9 @@
     "node": ">=8.0.0"
   },
   "dependencies": {
-    "firebase": "^5.10.0"
+    "@google-cloud/firestore": "^1.2.0",
+    "firebase": "^5.10.0",
+    "firebase-admin": "^7.3.0"
   },
   "devDependencies": {
     "eslint": "^4.12.0",
