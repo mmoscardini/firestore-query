@@ -1,0 +1,16 @@
+{
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "plugins": [
+    "promise"
+  ],
+  "extends": [
+    "plugin:node/recommended",
+    "airbnb-base"
+  ],
+  "rules": {
+    "max-len": [2, 120, 2, { "ignoreTrailingComments": true }]
+  }
+}

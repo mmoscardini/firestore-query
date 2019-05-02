@@ -1,9 +1,9 @@
 const Firestore = require('@google-cloud/firestore');
 
 const getCredentials = (projectId) => {
-  const keyfilesPath = `./keyfile.json`;
+  const keyfilesPath = './keyfile.json';
   return {
-    projectId: projectId,
+    projectId,
     keyFilename: keyfilesPath,
   };
 };
@@ -16,6 +16,6 @@ const getFirestore = (credentials) => {
 };
 
 module.exports = Object.freeze({
-  getCredentials: getCredentials,
-  getFirestore: getFirestore,
+  getCredentials,
+  getFirestore,
 });
