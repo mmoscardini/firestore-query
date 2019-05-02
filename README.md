@@ -7,7 +7,7 @@
 
 # Quering
 Write your queries on a file named *query.txt* located on the *queries folder*
-The template.txt has guidelines on how to write your queries
+The [template.txt](https://github.com/mmoscardini/firestore-query/blob/master/queries/template.txt) has guidelines on how to write your queries
 
 # Executing
 run: npm i && npm start
