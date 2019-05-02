@@ -5,7 +5,7 @@
 * Create a new key for this project
 * *Export as json and save* on the root of this project as *'keyfile.json'* (do not commit this file!!!)
 
-# Quering
+# Querying
 Write your queries on a file named *query.txt* located on the *queries folder*
 The [template.txt](https://github.com/mmoscardini/firestore-query/blob/master/queries/template.txt) has guidelines on how to write your queries
 

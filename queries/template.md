@@ -1,9 +1,13 @@
 # Collection
 collectionName
 
-# Conditions (where clause)
+# Conditions
 field, operator, value
 
+The conditions must be separeted by coma(','), and each conditions listed on a new line.
+Firebase only suports *AND* operations, so each clause is aggregated with an *AND*
+
+# Description
 Fields is the name of the field to query for
 
 Operator must be a valid firebase operator ['==', '>', '<' '>=', '<=']
