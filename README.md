@@ -8,3 +8,7 @@ Complete the file 'query.txt' with the missing fields
 
 run: npm i to setup the project
 than run npm start
+
+The results of the query will be printed on the terminal
+
+Next steps: Implemente aggregation
