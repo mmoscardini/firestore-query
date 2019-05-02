@@ -1,0 +1,7 @@
+# Collection
+users
+
+# Conditions (where clause)
+updatedAt, >=, 2019-04-01
+city, ==, São Paulo
+

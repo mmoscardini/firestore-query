@@ -1,0 +1,17 @@
+# Collection
+collectionName
+
+# Conditions (where clause)
+field, operator, value
+
+Fields is the name of the field to query for
+
+Operator must be a valid firebase operator ['==', '>', '<' '>=', '<=']
+
+Value must be the value to query, with a valid type
+Examples:
+String: São Paulo
+Number 123
+Date: 2019-01-01 or 2019-01-01T15:00:00Z
+Boolean: true, false, TRUE, FALSE, True, False ...
+Null: null

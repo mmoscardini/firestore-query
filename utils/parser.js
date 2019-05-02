@@ -1,6 +1,6 @@
 const isDate = date => (new Date(date) !== 'Invalid Date') && (date.indexOf('-') >= 0);
 
-const isBoolean = bool => bool === 'true' || bool === 'false';
+const isBoolean = bool => bool.toLowerCase() === 'true' || bool.toLowerCase() === 'false';
 
 const isNull = str => (str === 'null');
 
@@ -20,4 +20,8 @@ const parseClauseValue = (clause) => {
   return clause;
 };
 
-module.exports = { parseClauseValue };
+const parseClauseOperator = (operator) => {
+
+};
+
+module.exports = { parseClauseValue, parseClauseOperator };
